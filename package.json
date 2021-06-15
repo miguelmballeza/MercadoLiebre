@@ -1,0 +1,14 @@
+{
+  "name": "proyectohtml",
+  "version": "1.0.0",
+  "description": "This folder contain all the files related to the practices from \"Proyecto\" of \u001b111st Class.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Miguel Angel Molina Balleza",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mi primer documento en HTML</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/c1014e3fce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/images/logo-mercado-liebre.png" class="logo">
+            <h2 class="copy-header">
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjetas de crédito
+            </h2>
+        </div>
+        <a class="hamburguer-button" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+
+            <ul class="right-navbar">
+                <li><a href="#">Creá tu cuenta <i class="fas fa-credit-card"></i></a></li>
+                <li><a href="#">Ingresá</a></li>
+                <li><a href="#">Mis compras</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--Formulario-->
+    <form action="/crear-producto" method="POST" class="create-form">
+        <div class="control-formulario">
+            <label>Nombre del producto:</label>
+            <input type="text" name="nombre" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Precio:</label>
+            <input type="text" name="precio" placeholder="123.56"  class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Categoria:</label>
+            <select name="categoria" class="control">
+                <option value="hogar">Hogar</option>
+                <option value="electro">Electro</option>
+                <option value="indumentaria">Indumentaria</option>
+            </select>
+        </div>
+        <div class="control-formulario">
+            <label>Ciudad:</label>
+            <select name="ciudad" class="control">
+                <option value="baires">Buenos Aires</option>
+                <option value="ros">Rosario</option>
+                <option value="mdz">Mendoza</option>
+            </select>
+        </div>
+        <div class="control-formulario">
+            <label>Descripción</label>
+            <textarea name="descripcion" class="control"></textarea>
+        </div>
+        <div class="control-formulario">
+            <label>Está en oferta:</label>
+            <input type="radio" name="enOferta">
+        </div>
+        <button type="reset" class="boton-formulario">Borrar</button>
+        <button type="submit" class="boton-formulario">Guardar</button>
+    </form>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsa commodi hic nisi maiores consequatur aut aperiam non tempore porro ad perspiciatis enim, consectetur molestias numquam corrupti quis error! At?</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit odio, architecto odit nihil voluptatum officiis eligendi, est modi, totam atque quia vel cum ratione officia dignissimos? Assumenda, rem esse!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit odio, architecto odit nihil voluptatum officiis eligendi, est modi, totam atque quia vel cum ratione officia dignissimos? Assumenda, rem esse!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto impedit odio, architecto odit nihil voluptatum officiis eligendi, est modi, totam atque quia vel cum ratione officia dignissimos? Assumenda, rem esse!</p>
+    <article class="product">
+        <img src="/images/img-iphone-11.jpg" alt="product image">
+        <h2>iPhone 11</h2>
+    </article>
+    <article class="product">
+        <img src="/images/img-iphone-11.jpg" alt="product image">
+        <h2>iPhone 11</h2>
+    </article>
+    <article class="product">
+        <img src="/images/img-iphone-11.jpg" alt="product image">
+        <h2>iPhone 11</h2>
+    </article>
+</body>
+</html>
